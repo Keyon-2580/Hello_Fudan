@@ -273,7 +273,7 @@ if __name__ == '__main__':
     print(time.ctime())
     x = random.randint(0,15)
     time.sleep(x*60)
-    print("sleep" + x + "minutes")
+    print("sleep %d"%(x) + "minutes")
     print(time.ctime())
     uid, psw = get_account()
     # print(uid, psw)
