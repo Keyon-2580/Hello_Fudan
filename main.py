@@ -10,6 +10,7 @@ import base64
 import easyocr
 import io
 import numpy
+import random
 from PIL import Image
 from PIL import ImageEnhance
 
@@ -269,6 +270,11 @@ def get_account():
 
 
 if __name__ == '__main__':
+    print(time.ctime())
+    x = random.randint(0,15)
+    time.sleep(x*60)
+    print("sleep" + x + "minutes")
+    print(time.ctime())
     uid, psw = get_account()
     # print(uid, psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
